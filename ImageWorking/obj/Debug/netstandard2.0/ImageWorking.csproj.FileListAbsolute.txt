@@ -1,0 +1,9 @@
+D:\Прога\labs\Term5\СМТРПЗ-2\Lab2\Lab2\ImageWorking\bin\Debug\netstandard2.0\ImageWorking.deps.json
+D:\Прога\labs\Term5\СМТРПЗ-2\Lab2\Lab2\ImageWorking\bin\Debug\netstandard2.0\ImageWorking.dll
+D:\Прога\labs\Term5\СМТРПЗ-2\Lab2\Lab2\ImageWorking\bin\Debug\netstandard2.0\ImageWorking.pdb
+D:\Прога\labs\Term5\СМТРПЗ-2\Lab2\Lab2\ImageWorking\obj\Debug\netstandard2.0\ImageWorking.csprojAssemblyReference.cache
+D:\Прога\labs\Term5\СМТРПЗ-2\Lab2\Lab2\ImageWorking\obj\Debug\netstandard2.0\ImageWorking.csproj.CoreCompileInputs.cache
+D:\Прога\labs\Term5\СМТРПЗ-2\Lab2\Lab2\ImageWorking\obj\Debug\netstandard2.0\ImageWorking.AssemblyInfoInputs.cache
+D:\Прога\labs\Term5\СМТРПЗ-2\Lab2\Lab2\ImageWorking\obj\Debug\netstandard2.0\ImageWorking.AssemblyInfo.cs
+D:\Прога\labs\Term5\СМТРПЗ-2\Lab2\Lab2\ImageWorking\obj\Debug\netstandard2.0\ImageWorking.dll
+D:\Прога\labs\Term5\СМТРПЗ-2\Lab2\Lab2\ImageWorking\obj\Debug\netstandard2.0\ImageWorking.pdb
