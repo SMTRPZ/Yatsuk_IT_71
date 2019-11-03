@@ -14,7 +14,7 @@ namespace ImageWorking.Services
     {
         #region Fields
 
-        private readonly ISubDirectoriesPathProvider _subdirectoriesPathProvider;
+        private readonly ISubdirectoriesPathProvider _subdirectoriesPathProvider;
         private readonly IImageContentProvider<ImageContentType> _imageContentProvider;
         private readonly IFileNameProvider _fileNameProvider;
 
@@ -25,11 +25,11 @@ namespace ImageWorking.Services
         /// <summary>
         /// Default constructor
         /// </summary>
-        /// <param name="subdirectoriesPathProvider"><see cref="ISubDirectoriesPathProvider"/></param>
+        /// <param name="subdirectoriesPathProvider"><see cref="ISubdirectoriesPathProvider"/></param>
         /// <param name="imageContentProvider"><see cref="IImageContentProvider{ImageContentType}"/></param>
         /// <param name="fileNameProvider"><see cref="IFileNameProvider"/></param>
         /// <exception cref="ArgumentNullException">Thrown when one of input parameters is null</exception>
-        public ImagesService(ISubDirectoriesPathProvider subdirectoriesPathProvider, IImageContentProvider<ImageContentType> imageContentProvider, IFileNameProvider fileNameProvider)
+        public ImagesService(ISubdirectoriesPathProvider subdirectoriesPathProvider, IImageContentProvider<ImageContentType> imageContentProvider, IFileNameProvider fileNameProvider)
         {
             _subdirectoriesPathProvider = subdirectoriesPathProvider
                 ?? throw new ArgumentNullException(nameof(subdirectoriesPathProvider));
@@ -71,7 +71,7 @@ namespace ImageWorking.Services
             {
                 var root = directory as CompositiveDirectory<ImageContentType>
                     ?? throw new InvalidOperationException($"Simple directory cannot contain sub folders; Path to directory {directory.Path}");
-                ((CompositiveDirectory<ImageContentType>)directory).AddRangeOfSubDirectories(subDirectories);
+                ((CompositiveDirectory<ImageContentType>)directory).AddRangeOfSubdirectories(subDirectories);
                 foreach (var subDirectory in subDirectories)
                     BuildDirectoriesTree(subDirectory);
             }

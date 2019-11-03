@@ -5,7 +5,7 @@ namespace ImageWorking.Abstract.Interfaces
     /// <summary>
     /// Abstraction to work with subdirectory names
     /// </summary>
-    public interface ISubDirectoriesPathProvider
+    public interface ISubdirectoriesPathProvider
     {
         /// <summary>
         /// Returns pathes to subdirectories 

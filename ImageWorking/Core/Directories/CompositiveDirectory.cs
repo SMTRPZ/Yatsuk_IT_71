@@ -60,7 +60,7 @@ namespace ImageWorking.Core
         /// Adds directory to current directory
         /// </summary>
         /// <param name="directory"></param>
-        public void AddSubDirectory(Directory<ImageContentType> directory)
+        public void AddSubdirectory(Directory<ImageContentType> directory)
         {
             if (directory == null)
                 throw new ArgumentNullException(nameof(directory));
@@ -72,13 +72,13 @@ namespace ImageWorking.Core
         /// Adds range of subdirectories for current directory
         /// </summary>
         /// <param name="directories"></param>
-        public void AddRangeOfSubDirectories(IEnumerable<Directory<ImageContentType>> directories)
+        public void AddRangeOfSubdirectories(IEnumerable<Directory<ImageContentType>> directories)
         {
             if (directories == null)
                 throw new ArgumentNullException(nameof(directories));
 
             foreach (var directory in directories)
-                AddSubDirectory(directory);
+                AddSubdirectory(directory);
         }
 
         #endregion
@@ -94,6 +94,8 @@ namespace ImageWorking.Core
         /// <returns><see cref="CompositiveDirectory{ImageContentType}"/></returns>
         public static CompositiveDirectory<ImageContentType> New(IImageContentProvider<ImageContentType> imageContentProvider, IFileNameProvider fileNameProvider, string path) => 
             new CompositiveDirectory<ImageContentType>(imageContentProvider, fileNameProvider, path);
+
+       
 
         #endregion
 
